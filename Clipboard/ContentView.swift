@@ -18,7 +18,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Create the main window and wrap it in an NSWindowController.
         let contentView = ContentView()
         let window = NSWindow(
-            contentRect: NSRect(x: 0, y: 0, width: 600, height: 400),
+            contentRect: NSRect(x: 0, y: 0, width: 1200, height: 800),
             styleMask: [.titled, .closable, .resizable],
             backing: .buffered,
             defer: false)
@@ -221,7 +221,6 @@ class ClipboardHistoryManager: ObservableObject {
             items = []
         }
     }
-
     
     /// Poll the pasteboard every second.
     private func startPolling() {
@@ -358,6 +357,8 @@ struct ContentView: View {
             }
         }
         .frame(minWidth: 600, minHeight: 400)
+        // Set a dynamic background that adapts to dark/light mode.
+        .background(Color(NSColor.windowBackgroundColor))
         .alert("Clear All History?", isPresented: $showingClearConfirmation) {
             Button("Clear", role: .destructive) {
                 clipboardManager.clear()
@@ -390,7 +391,7 @@ struct FullTextView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text("\tFull Text")
+            Text("Full Text")
                 .font(.headline)
                 .padding(.vertical)
             Divider()
@@ -413,6 +414,7 @@ struct FullTextView: View {
             .padding()
         }
         .frame(width: 600, height: 400)
+        .background(Color(NSColor.windowBackgroundColor))
     }
 }
 
@@ -448,6 +450,7 @@ struct FullImageView: View {
             .padding()
         }
         .frame(width: 600, height: 400)
+        .background(Color(NSColor.windowBackgroundColor))
     }
 }
 
