@@ -15,13 +15,18 @@ A lightweight macOS clipboard manager built with SwiftUI that captures and store
 - **Dynamic Appearance:** Uses dynamic background colors for a consistent look in both dark and light modes.
 - **Clear History:** A “Clear” button allows you to remove all stored clipboard items after confirming via a dialog.
 
+## Installation
+
+- Extract the zip `Clipboard.zip`
+- Move the Clipboard app to `Applications` in Finder.
+
 ## Requirements
 
 - macOS 10.15 (Catalina) or later
 - Xcode 12 or later
 - Swift 5
 
-## Installation
+## Build your Own
 
 Clone the repository:
 
