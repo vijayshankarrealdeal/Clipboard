@@ -1,7 +1,3 @@
-Below is an example `README.md` file for your project:
-
----
-
 # Clipboard History Manager
 
 A lightweight macOS clipboard manager built with SwiftUI that captures and stores both text and image clipboard content. It runs in the background with a menu bar icon, supports a global hotkey (Command+Control+V) to bring up the main window, persists clipboard data locally, and adapts its appearance for both dark and light modes.
@@ -18,7 +14,7 @@ A lightweight macOS clipboard manager built with SwiftUI that captures and store
 ## Installation
 
 - Extract the zip `Clipboard.zip`
-- Move the Clipboard app to `Applications` in Finder.
+- Move the `Clipboard.app` to `Applications` in Finder.
 
 ## Requirements
 
