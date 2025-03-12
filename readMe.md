@@ -1,10 +1,9 @@
 # Clipboard History Manager
 
-A lightweight macOS clipboard manager built with SwiftUI that captures and stores both text and image clipboard content. It runs in the background with a menu bar icon, supports a global hotkey (Command+Control+V) to bring up the main window, persists clipboard data locally, and adapts its appearance for both dark and light modes.
+A lightweight macOS clipboard manager built with SwiftUI that captures and stores both text and image clipboard content. It runs in the background with a menu bar icon, persists clipboard data locally, and adapts its appearance for both dark and light modes.
 
 ## Features
 
-- **Global Hotkey:** Quickly show the clipboard history window by pressing Command+Control+V.
 - **Status Bar Integration:** Access the app easily via a menu bar icon.
 - **Clipboard Monitoring:** Automatically detects new text and image data on the clipboard.
 - **Local Persistence:** Saves clipboard history locally as a JSON file in Application Support.
