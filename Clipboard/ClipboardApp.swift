@@ -1,17 +1,15 @@
-//
-//  ClipboardApp.swift
-//  Clipboard
-//
-//  Created by vijay shankar on 12/03/25.
-//
-
 import SwiftUI
 
 @main
-struct ClipboardApp: App {
+struct ClipboardHistoryApp: App {
+    // Use an AppDelegate to handle hotkeys, background mode, and startup registration.
+    @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .frame(minWidth: 600, minHeight: 400)
         }
     }
 }
+
